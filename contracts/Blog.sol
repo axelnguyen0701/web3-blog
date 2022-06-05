@@ -45,7 +45,7 @@ contract Blog {
     function transferOwnership(address newOwner) public onlyOwner {
         owner = newOwner;
     }
- 
+
     /* fetches an individual post by the content hash */
     function fetchPost(string memory hash) public view returns(Post memory){
       return hashToPost[hash];
